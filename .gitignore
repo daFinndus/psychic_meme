@@ -27,3 +27,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### My own Files ###
+keyfile.txt
+textfile.txt
+encrypted_textfile.txt
