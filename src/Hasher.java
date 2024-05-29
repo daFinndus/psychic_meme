@@ -8,6 +8,9 @@ public class Hasher {
 
     public Hasher(String textfilePath) {
         this.textfilePath = textfilePath;
+
+        hashFile();
+        saveFile();
     }
 
     public void hashFile() {

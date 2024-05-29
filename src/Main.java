@@ -10,18 +10,14 @@ public class Main {
     static Detector detector;
 
     public static void main(String[] args) {
-        if (args[0].toLowerCase().equals("encrypt")) {
+        if (args[0].equalsIgnoreCase("encrypt")) {
             encryptor = new Encryptor(args[1], args[2]);
-            encryptor.encryptFile();
-        } else if (args[0].toLowerCase().equals("decrypt")) {
+        } else if (args[0].equalsIgnoreCase("decrypt")) {
             decryptor = new Decryptor(args[1], args[2]);
-            decryptor.decryptFile();
-        } else if (args[0].toLowerCase().equals("hash")) {
+        } else if (args[0].equalsIgnoreCase("hash")) {
             hasher = new Hasher(args[1]);
-            hasher.hashFile();
-        } else if (args[0].toLowerCase().equals("detect")) {
+        } else if (args[0].equalsIgnoreCase("detect")) {
             detector = new Detector(args[1]);
-            detector.detectFile();
         }
     }
 }

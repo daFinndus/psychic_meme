@@ -10,6 +10,9 @@ public class Decryptor {
     public Decryptor(String textfilePath, String keyfilePath) {
         this.textfilePath = textfilePath;
         this.keyfilePath = keyfilePath;
+
+        decryptFile();
+        saveFile();
     }
 
     public void decryptFile() {

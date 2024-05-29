@@ -10,6 +10,8 @@ public class Detector {
 
     public Detector(String textfilePath) {
         this.textfilePath = textfilePath;
+
+        detectFile();
     }
 
     public void detectFile() {
