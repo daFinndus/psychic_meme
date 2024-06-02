@@ -10,9 +10,9 @@ import java.security.Security;
 import java.util.Formatter;
 
 /**
- * This class should take a textfile as an input
- * It should calculate the hash of the textfile using MD5, SHA-3 and RIPEMD-160
- * The hash values for each algorithm should be saved in a separate textfile in the same directory as the textfile
+ * This class takes a text file as an input
+ * It calculates the MD5, SHA-3, and RIPEMD-160 hash values of the file
+ * It saves the hash values to separate files
  */
 public class Hasher {
     String textfilePath;

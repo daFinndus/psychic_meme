@@ -17,7 +17,7 @@ public class Main {
         } else if (args[0].equalsIgnoreCase("hash")) {
             hasher = new Hasher(args[1]);
         } else if (args[0].equalsIgnoreCase("detect")) {
-            detector = new Detector(args[1]);
+            detector = new Detector(args[1], args[2], args[3]);
         }
     }
 }

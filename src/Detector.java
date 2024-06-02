@@ -1,21 +1,56 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.logging.Logger;
+
 /**
- * This class should take a textfile as an input
- * The textfile should have the hash values of the original textfile
- * It should calculate the hash values based on the given file
- * Then it should check if the calculated hash values match the original hash values
- * The result should be returned to console
+ * This class takes a text file as an input, a hash file as an input and a hash method
+ * It detects if the text file has been tampered with
+ * It compares the hash value of the text file with the hash value in the hash file
+ * It returns true for the given hash method if the hash values match
  */
 public class Detector {
+    System.Logger logger = System.getLogger(getClass().getName());
+
     String textfilePath;
+    String hashfilePath;
+    String hashMethod;
 
-    public Detector(String textfilePath) {
+    public Detector(String textfilePath, String hashfilePath, String hashMethod) {
         this.textfilePath = textfilePath;
+        this.hashfilePath = hashfilePath;
+        this.hashMethod = hashMethod;
 
-        detectFile();
+        logger.log(System.Logger.Level.INFO, "File was hashed with " + this.hashMethod + ": " + detectFile());
     }
 
-    public void detectFile() {
-        // Implement detection here
-        System.out.println(textfilePath);
+    public boolean detectFile() {
+        try {
+            // Read the content of the text file
+            byte[] textFileBytes = Files.readAllBytes(Paths.get(textfilePath));
+
+            // Calculate hash of the text file based on the specified hash method
+            MessageDigest digest = MessageDigest.getInstance(hashMethod);
+            byte[] hashBytes = digest.digest(textFileBytes);
+
+            // Read the hash from the hash file
+            String storedHash = new String(Files.readAllBytes(Paths.get(hashfilePath)));
+
+            // Convert the calculated hash bytes to a string
+            StringBuilder hashBuilder = new StringBuilder();
+            for (byte b : hashBytes) {
+                hashBuilder.append(String.format("%02x", b));
+            }
+            String calculatedHash = hashBuilder.toString();
+
+            // Compare the calculated hash with the stored hash
+            return calculatedHash.equals(storedHash);
+        } catch (NoSuchAlgorithmException | IOException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 }
