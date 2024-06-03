@@ -52,7 +52,7 @@ public class Hasher {
         } catch (java.io.FileNotFoundException e) {
             logger.log(System.Logger.Level.ERROR, "File not found: " + e.getMessage());
         } catch (Exception e) {
-            logger.log(System.Logger.Level.ERROR, "An error occurred: " + e.getMessage());
+            logger.log(System.Logger.Level.ERROR, "Hashing data failed: " + e.getMessage());
         }
     }
 
@@ -99,7 +99,7 @@ public class Hasher {
 
             logger.log(System.Logger.Level.INFO, "Hash files saved successfully.");
         } catch (Exception e) {
-            logger.log(System.Logger.Level.ERROR, "An error occurred: " + e.getMessage());
+            logger.log(System.Logger.Level.ERROR, "Saving file failed: " + e.getMessage());
         }
     }
 }

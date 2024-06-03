@@ -1,10 +1,8 @@
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.logging.Logger;
 
 /**
  * This class takes a text file as an input, a hash file as an input and a hash method
@@ -13,11 +11,13 @@ import java.util.logging.Logger;
  * It returns true for the given hash method if the hash values match
  */
 public class Detector {
-    System.Logger logger = System.getLogger(getClass().getName());
-
     String textfilePath;
     String hashfilePath;
     String hashMethod;
+
+
+    System.Logger logger = System.getLogger(getClass().getName());
+
 
     public Detector(String textfilePath, String hashfilePath, String hashMethod) {
         this.textfilePath = textfilePath;

@@ -45,7 +45,7 @@ public class Decryptor {
         } catch (java.io.FileNotFoundException e) {
             logger.log(System.Logger.Level.ERROR, "File not found: " + e.getMessage());
         } catch (Exception e) {
-            logger.log(System.Logger.Level.ERROR, "An error occurred: " + e.getMessage());
+            logger.log(System.Logger.Level.ERROR, "Decrypting data failed: " + e.getMessage());
         }
     }
 
@@ -70,7 +70,7 @@ public class Decryptor {
 
             logger.log(System.Logger.Level.INFO, "Decrypted file saved at: " + decryptedFilePath);
         } catch (Exception e) {
-            logger.log(System.Logger.Level.ERROR, "An error occurred: " + e.getMessage());
+            logger.log(System.Logger.Level.ERROR, "Saving file failed: " + e.getMessage());
         }
     }
 }

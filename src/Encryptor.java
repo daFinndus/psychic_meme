@@ -45,7 +45,7 @@ public class Encryptor {
         } catch (java.io.FileNotFoundException e) {
             logger.log(System.Logger.Level.ERROR, "File not found: " + e.getMessage());
         } catch (Exception e) {
-            logger.log(System.Logger.Level.ERROR, "An error occured: " + e.getMessage());
+            logger.log(System.Logger.Level.ERROR, "Encrypting data failed: " + e.getMessage());
         }
     }
 
@@ -70,7 +70,7 @@ public class Encryptor {
 
             logger.log(System.Logger.Level.INFO, "Encrypted file saved at: " + encryptedFilePath);
         } catch (Exception e) {
-            logger.log(System.Logger.Level.ERROR, "An error occured: " + e.getMessage());
+            logger.log(System.Logger.Level.ERROR, "Saving file failed: " + e.getMessage());
         }
     }
 }
