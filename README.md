@@ -22,5 +22,29 @@ Compile with the following command:
 
 Execute the Main with the following command:
 
-```java -cp "bin:lib/*" Main <args>```
+```java -cp "bin:lib/*" Main <args>``` ( for Linux )
 
+```java -cp "bin;lib/*" Main <args>``` ( for Windows )
+
+----------------------------------------------------------------------------------------------------------------------------
+
+You have the following options:
+
+Encryption:
+```java -cp "bin;lib/*" Main encrypt <path/to/textfile> <path/to/keyfile>```
+
+Decryption:
+```java -cp "bin;lib/*" Main decrypt <path/to/textfile> <path/to/keyfile>```
+
+Hashing:
+```java -cp "bin;lib/*" Main hash <path/to/textfile>```
+```java -cp "bin;lib/*" Main hash <path/to/textfile> <HASH_METHOD>```
+
+Hash-detection:
+```java -cp "bin;lib/*" Main detect <path/to/textfile> <path/to/hashfile> <HASH_METHOD>```
+
+Currently available hash methods are:
+
+- MD5
+- SHA3-256
+- RIPEMD160

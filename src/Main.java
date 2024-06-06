@@ -15,7 +15,11 @@ public class Main {
         } else if (args[0].equalsIgnoreCase("decrypt")) {
             decryptor = new Decryptor(args[1], args[2]);
         } else if (args[0].equalsIgnoreCase("hash")) {
-            hasher = new Hasher(args[1]);
+            if (args[2] == null) {
+                hasher = new Hasher(args[1]);
+            } else {
+                hasher = new Hasher(args[1], args[2]);
+            }
         } else if (args[0].equalsIgnoreCase("detect")) {
             detector = new Detector(args[1], args[2], args[3]);
         }
