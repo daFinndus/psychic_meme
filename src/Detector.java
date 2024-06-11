@@ -10,6 +10,11 @@ import java.security.NoSuchAlgorithmException;
  * It compares the hash value of the text file with the hash value in the hash file
  * It returns true for the given hash method if the hash values match
  */
+
+    /*
+    Detect for RIPEMD160 can lead to an error
+     */
+
 public class Detector {
     String textfilePath;
     String hashfilePath;
