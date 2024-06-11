@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/keyfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/keyfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Detector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,8 @@
       <workItem from="1717706422079" duration="854000" />
       <workItem from="1717707285954" duration="1111000" />
       <workItem from="1718104426281" duration="32000" />
-      <workItem from="1718104463269" duration="519000" />
+      <workItem from="1718104463269" duration="600000" />
+      <workItem from="1718105224414" duration="222000" />
     </task>
     <servers />
   </component>

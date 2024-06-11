@@ -30,20 +30,25 @@ Execute the Main with the following command:
 
 You have the following options:
 
-Encryption:
-```java -cp "bin;lib/*" Main encrypt <path/to/textfile> <path/to/keyfile>```
+Encryption:<br>
+Linux ```java -cp "bin:lib/*" Main encrypt <path/to/textfile> <path/to/keyfile>```<br>
+Windows ```java -cp "bin;lib/*" Main encrypt <path/to/textfile> <path/to/keyfile>```<br>
 
-Decryption:
-```java -cp "bin;lib/*" Main decrypt <path/to/textfile> <path/to/keyfile>```
+Decryption:<br>
+Linux ```java -cp "bin:lib/*" Main decrypt <path/to/textfile> <path/to/keyfile>```<br>
+Windows ```java -cp "bin;lib/*" Main decrypt <path/to/textfile> <path/to/keyfile>```<br>
 
-Hash with specific method:
-```java -cp "bin;lib/*" Main hash <path/to/textfile> <HASH_METHOD>```
+Hash with specific method:<br>
+Linux ```java -cp "bin:lib/*" Main hash <path/to/textfile> <HASH_METHOD>```<br>
+Windows ```java -cp "bin;lib/*" Main hash <path/to/textfile> <HASH_METHOD>```<br>
 
-Hash with all available methods:
-```java -cp "bin;lib/*" Main hash <path/to/textfile>```
+Hash with all available methods:<br>
+Linux ```java -cp "bin:lib/*" Main hash <path/to/textfile>```<br>
+Windows ```java -cp "bin;lib/*" Main hash <path/to/textfile>```<br>
 
-Hash-detection:
-```java -cp "bin;lib/*" Main detect <path/to/textfile> <path/to/hashfile> <HASH_METHOD>```
+Hash-detection:<br>
+Linux ```java -cp "bin:lib/*" Main detect <path/to/textfile> <path/to/hashfile> <HASH_METHOD>```<br>
+Windows ```java -cp "bin;lib/*" Main detect <path/to/textfile> <path/to/hashfile> <HASH_METHOD>```<br>
 
 Currently available hash methods are:
 
