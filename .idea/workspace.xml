@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1df6c037-3b54-42d6-a7ad-3adc1bdad0bb" name="Changes" comment="" />
+=======
+    <list default="true" id="1df6c037-3b54-42d6-a7ad-3adc1bdad0bb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+>>>>>>> 8185e14823dec4ff4ddf5b8a9062ab8fd1ea7a73
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +47,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Projects/Java/seven&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/SSK Tech Media/Projects/Java/seven&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -78,7 +87,14 @@
       <workItem from="1717403349077" duration="904000" />
       <workItem from="1717706281922" duration="127000" />
       <workItem from="1717706422079" duration="854000" />
+<<<<<<< HEAD
       <workItem from="1717707285954" duration="1172000" />
+=======
+      <workItem from="1717707285954" duration="1111000" />
+      <workItem from="1718104426281" duration="32000" />
+      <workItem from="1718104463269" duration="600000" />
+      <workItem from="1718105224414" duration="222000" />
+>>>>>>> 8185e14823dec4ff4ddf5b8a9062ab8fd1ea7a73
     </task>
     <servers />
   </component>

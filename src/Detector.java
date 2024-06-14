@@ -1,8 +1,11 @@
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.Security;
 
 /**
  * This class takes a text file as an input, a hash file as an input and a hash method
@@ -23,6 +26,8 @@ public class Detector {
         this.textfilePath = textfilePath;
         this.hashfilePath = hashfilePath;
         this.hashMethod = hashMethod;
+
+        Security.addProvider(new BouncyCastleProvider());
 
         logger.log(System.Logger.Level.INFO, "File was hashed with " + this.hashMethod + ": " + detectFile());
     }
